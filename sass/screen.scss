@@ -1,0 +1,273 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+@import "compass";
+@import "browsers/*.png";
+@include all-browsers-sprites;
+
+.floatingHeader {
+  position: fixed;
+  top: 28;
+  visibility: hidden;
+  z-index: 999;
+  margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+.banner {
+	background-color: #fff;
+	background-image: none;
+}
+.content {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+.tagline {
+	font-size: 40px;
+	line-height: 40px;
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+.intro {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 300;
+	padding-bottom: 40px;
+}
+
+.intro h2 {
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.developers {
+	background-color: #333;
+	color: #fff;
+	font-size: 20px;
+	padding: 10px;
+	font-weight: 300;
+}
+
+.developers span {
+	color: #fff;
+	font-size: 16px;
+}
+
+.devlopers-wrap {
+	position: fixed;
+	top: 160px;
+	z-index: 100;
+	width: 100%;
+}
+
+.utility {
+	box-shadow: none;
+}
+
+.background {
+	background-color: #eee;
+}
+
+.persist-area .padd {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.billboard {
+	padding: 50 25;
+	font-size: 20px;
+	display: inline-block;
+	font-weight: 200;
+	text-align: left;
+	border-bottom: 1px solid #eee;
+	line-height: 30px;
+}
+.app {
+	text-align: center;
+}
+.app img {
+	padding: 30px;
+}
+
+.gradient-one {
+		@include background-image(linear-gradient(to right, #eee, #fff));
+}
+.gradient-two {
+		@include background-image(linear-gradient(to left, white, #f9f9f9));
+}
+.h2-oversized {
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 400;
+}
+
+.padd {
+	background-color: #fff;
+	width: 100%;
+	text-align: center;
+
+}
+.hero {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 442px;
+  color: #fff;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 26px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 46px;
+  color: #fff;
+  margin-bottom: 25px;
+  margin-top: 20px;
+}
+.hero .container {
+	line-height: 40px;
+	padding-top: 30px;
+}
+.play-button {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.btn-xl {
+	width: 250px;
+	padding: 22px;
+	font-size: 22px;
+	margin-top: 25px
+}
+.browser-wrap {
+	height: 100px;
+}
+#browsers {
+	background-color: #f2f2f2;
+	position: relative;
+	top: -110px;
+	padding: 30px;
+	padding-top: 20px;
+	left: 15%;
+	z-index: 3;
+	width: 600px;
+	height: 70px;
+	text-align: center;
+	@include border-radius(5px);
+	border: 10px solid white;
+  background-color: #fff;
+  box-shadow: 0 1px 100px rgba(0,0,0,0.25), 0 0 50px rgba(0,0,0,0.1) inset;
+}
+
+.learn-more {
+	font-weight: 400;
+}
+
+
+ul.no_bullet {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.browsers-icon-safari, .browsers-icon-chrome, .browsers-icon-firefox, .browsers-icon-ie {
+  height: 24px;
+  width: 100px;
+  float: left;
+  padding-left: 24px;
+  padding-top: 10px;
+  padding-right: 10px;
+}
+
+
+.img-src { 
+	position: absolute;
+	height: 500px;
+	background-position: center;
+	-webkit-background-size: cover;
+	top: 150px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.layout-foreground {
+	background: white;
+	height: 500px;
+	width: 100%;
+	position: absolute;
+	margin-top: 450px;
+	text-align: center;
+}
+
+.animateblock {
+  color: #333;
+  opacity: 0;
+  -webkit-transition: all 0.55s linear;
+  -moz-transition: all 0.55s linear;
+  transition: all 0.55s linear;
+}
+
+.animateblock.animated {
+  opacity: 1;
+}
+
+.animateblock.left {
+  margin-left: -10%;
+}
+
+.animateblock.left.animated {
+  margin-left: 0;
+}
+
+.animateblock.right {
+  margin-left: 100%;
+  margin-top: -115px;
+}
+
+.animateblock.right.animated {
+  margin-left: 60%;
+  margin-top: -115px;
+}
+
+.animateblock.btm {
+  display: block;
+  width: auto;
+  text-align: center;
+  margin-top: 25px;
+}
+.animateblock.btm.animated {
+  margin-top: -40px;
+}
+
+.support-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.support-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.play-video {
+	  background-image: url(../img/icon-play.png);
+    background-repeat: no-repeat;
+    padding-left: 27px;
+    background-position: 0px 4px;
+}
+
+.video-player {
+	display: none;
+	margin-top: 30px;
+}
+
+
+
+
